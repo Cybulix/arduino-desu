@@ -15,3 +15,6 @@ void loop() {
   Serial.println();
   delay(1000); // Get temp each second
 }
+
+// used resource 
+// https://www.tutorialspoint.com/arduino/arduino_temperature_sensor.htm
