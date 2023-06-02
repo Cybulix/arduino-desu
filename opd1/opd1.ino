@@ -11,9 +11,9 @@ void loop() {
 
 void blink(int time, int pin1, int pin2){
   digitalWrite(pin1, HIGH);
-  digitalWrite(pin2, HIGH);
-  delay(time);
-  digitalWrite(pin1, LOW);
   digitalWrite(pin2, LOW);
+  delay(time);
+  digitalWrite(pin2, HIGH);
+  digitalWrite(pin1, LOW);
   delay(time);
 }
