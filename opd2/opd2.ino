@@ -1,17 +1,17 @@
-// Led pins
+// LED pinnen
 const int ledPinArray[] = {13, 12, 11, 10, 9, 8, 7, 6};
 
 void setup() {
   Serial.begin(9600);
-  // put your setup code here, to run once:
-  // pin 13 = first 6 = last
+  // plaats hier je installatiecode, om eenmaal uit te voeren:
+  // pin 13 = eerste 6 = laatste
   for (int pin = 7; pin >= 0; pin--){
     pinMode(ledPinArray[pin], OUTPUT);
   }
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  // plaats hier je hoofdcode, om herhaaldelijk uit te voeren:
   leftToRight();
   rightToLeft();
 }
@@ -24,8 +24,8 @@ void blink(int time, int pin){
 }
 
 void leftToRight(){
-  // sizeof return lenght x2, that's why I use / 2, to get correct length.
-  // -2 takes care that end lamp isn't turned twice in a row for extra smooth effect.
+  // sizeof retourneert lengte x2, daarom gebruik ik / 2 om de juiste lengte te krijgen.
+  // -2 zorgt ervoor dat de eindlamp niet twee keer achter elkaar wordt ingeschakeld voor een extra vloeiend effect.
   for(int i= 0; i <= sizeof(ledPinArray) / 2 - 2; i++){
     blink(100, ledPinArray[i]);
     Serial.println(i);
@@ -39,5 +39,5 @@ void rightToLeft(){
   }
 }
 
-// Used source
+// Gebruikte bron
 // https://www.arduino.cc

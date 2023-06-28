@@ -1,10 +1,10 @@
-const int buttonPin = 8;  // the number of the pushbutton pin
-const int ledPin = 11;    // the number of the LED pin
+const int buttonPin = 8;  // het nummer van de pin van de drukknop
+const int ledPin = 11;    // het nummer van de pin van de LED
 
-// variable will be changed:
-int buttonState = 0;  // var for reading pushbutton status
-int previousButtonState = 0;  // var for storing previous button state
-int ledState = 0; // var for reading led status
+// variabele zal worden gewijzigd:
+int buttonState = 0;  // variabele voor het lezen van de status van de drukknop
+int previousButtonState = 0;  // variabele voor het opslaan van de vorige knopstatus
+int ledState = 0; // variabele voor het lezen van de status van de LED
 
 void setup() {
   Serial.begin(9600);

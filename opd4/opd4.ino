@@ -1,9 +1,9 @@
-// Led pins:
+// LED pinnen:
 const int ledPinArray[] = {13, 12, 11, 10, 9, 8, 7};
 
-// Potmeter
+// Potentiometer
 const int potMeterPin = A5;
-int potMeterValue = 0; // Start value
+int potMeterValue = 0; // Startwaarde
 
 void setup() {
   Serial.begin(9600);
