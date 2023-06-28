@@ -1,7 +1,7 @@
 // Led pin
-const int ledPinR = 10;
-const int ledPinG = 9;
-const int ledPinB = 8;
+const int ledPinR = 11;
+const int ledPinG = 10;
+const int ledPinB = 9;
 
 void setup() {
   pinMode(ledPinR, OUTPUT);
